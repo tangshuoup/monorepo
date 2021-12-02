@@ -1,6 +1,6 @@
 {
   "name": "quickstart",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "子应用",
   "private": true,
   "scripts": {
