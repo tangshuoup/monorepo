@@ -1,6 +1,9 @@
 {
   "name": "@shuotest/components",
-  "version": "0.2.2",
+  "version": "0.2.3",
+  "scripts": {
+    "build":"father-build"
+  },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
@@ -22,6 +25,7 @@
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
     "typescript": "^4.1.2",
-    "yorkie": "^2.0.0"
+    "yorkie": "^2.0.0",
+    "father-build": "^1.17.2"
   }
 }
