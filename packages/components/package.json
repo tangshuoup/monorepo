@@ -1,6 +1,6 @@
 {
   "name": "@shuotest/components",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "scripts": {
     "build": "father-build"
   },
@@ -13,9 +13,7 @@
     ]
   },
   "files": [
-    "dist",
-    "lib",
-    "es"
+    "dist"
   ],
   "dependencies": {
     "@babel/runtime": "^7.8.7",
