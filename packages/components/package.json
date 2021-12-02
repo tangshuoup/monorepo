@@ -1,6 +1,6 @@
-{  
+{
   "name": "@shuotest/components",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
       "prettier --write"
