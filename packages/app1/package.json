@@ -1,6 +1,6 @@
 {
   "name": "main-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "应用基座",
   "private": true,
   "scripts": {
