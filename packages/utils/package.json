@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo/test-utils",
+  "name": "@monorepotest/utils",
   "version": "0.0.9",
   "description": "> TODO: description",
   "author": "tanghsuo <shuo.tang@firesoon.com>",
@@ -19,5 +19,5 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "7ff5637ecfb4ded9440c27d0f42b304ae87adfb3"
+  "gitHead": "bbd3e3b835a35dfeb0e5e41d9e012fb7104be6c3"
 }
