@@ -4,11 +4,11 @@
  * @Author: tangshuo
  * @Date: 2021-11-30 14:55:46
  * @LastEditors: tangshuo
- * @LastEditTime: 2021-12-01 17:45:40
+ * @LastEditTime: 2021-12-02 14:53:59
  */
 import { prefix, version } from './src/utils/config';
-const { ModuleFederationPlugin } = require("webpack").container;
-const deps = require("./package.json").dependencies;
+// const { ModuleFederationPlugin } = require("webpack").container;
+// const deps = require("./package.json").dependencies;
 import theme from './src/utils/theme';
 const path = require('path');
 
@@ -23,12 +23,12 @@ export default {
     }
   },
   dynamicImport: {
-    loading: 'subApp/Loading',
+    // loading: 'subApp/Loading',
   },
   alias: {
     '@ant-design/icons/lib/dist$': path.resolve(__dirname, './src/icons.ts'),
   },
-  webpack5: {},
+  // webpack5: {},
   chainWebpack(config) {
     config.merge({
       optimization: {
@@ -56,24 +56,24 @@ export default {
         },
       },
     });
-    config.plugin('mf').use(ModuleFederationPlugin, [{
-      name: 'mainApp',
-      remotes: {
-        subApp: "subApp@http://localhost:3001/remoteEntry.js"
-      },
-      shared: { 
-        react: { 
-          requiredVersion: deps.react,
-          singleton: true,
-          eager: true
-        }, 
-        "react-dom": { 
-          requiredVersion: deps['react-dom'],
-          singleton: true,
-          eager: true
-         } 
-        },
-    }]);
+    // config.plugin('mf').use(ModuleFederationPlugin, [{
+    //   name: 'mainApp',
+    //   remotes: {
+    //     subApp: "subApp@http://localhost:3001/remoteEntry.js"
+    //   },
+    //   shared: { 
+    //     react: { 
+    //       requiredVersion: deps.react,
+    //       singleton: true,
+    //       eager: true
+    //     }, 
+    //     "react-dom": { 
+    //       requiredVersion: deps['react-dom'],
+    //       singleton: true,
+    //       eager: true
+    //      } 
+    //     },
+    // }]);
   },
   ignoreMomentLocale: true,
   metas: [{ 'http-equiv': 'A-UA-Compatible', content: 'IE=Edge,chrome=1' }],
