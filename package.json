@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "release": "cd packages/componetns && yarn build && lerna publish",
+    "release": "cd packages/components && yarn build",
     "boots": "lerna clean && lerna bootstrap",
     "start:app1": "cd packages/app1 && yarn start",
     "start:app2": "cd packages/app2 && yarn start"
