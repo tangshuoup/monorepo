@@ -1,0 +1,83 @@
+{
+  "name": "quickstart",
+  "version": "1.0.0",
+  "description": "子应用",
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "test": "umi test",
+    "analyze": "set ANALYZE=1&&umi build",
+    "lint:es": "eslint --ext .js src mock tests",
+    "lint:ts": "eslint \"src/**/*.ts\" \"src/**/*.tsx\"",
+    "lint-fix:style": "stylelint \"src/**/*.less\" --fix"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^2.1.1",
+    "@firesoon/ant-ui": "^2.0.0-9",
+    "@firesoon/icons-react": "^1.43.9",
+    "@firesoon/log-sdk": "^2.1.1-0",
+    "antd": "^3",
+    "crypto-js": "^4.0.0",
+    "dva": "^2.6.0-beta.22",
+    "echarts": "^4",
+    "echarts-for-react": "^2",
+    "md5": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dev-inspector": "^1.7.1",
+    "react-dom": "^17.0.2",
+    "styled-components": "5.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-redux": "^7.1.5",
+    "@types/react-test-renderer": "^16.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "@umijs/plugin-qiankun": "^2.35.2",
+    "@umijs/preset-react": "^1",
+    "babel-eslint": "^11.0.0-beta.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-alloy": "^4.3.0",
+    "eslint-config-firesoon": "^1.0.1-2",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "lodash-webpack-plugin": "^0.11.5",
+    "react-test-renderer": "^16.7.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-css-modules": "^1.5.0",
+    "stylelint-config-standard": "^19.0.0",
+    "typescript": "^4.4.3",
+    "umi": "^3.5",
+    "umi-types": "^0.2.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{css,less}": [
+      "stylelint"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

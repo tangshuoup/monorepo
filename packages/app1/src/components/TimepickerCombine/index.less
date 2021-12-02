@@ -1,0 +1,21 @@
+.offsetLeft {
+  margin-right: 10px;
+}
+
+.width {
+  width: 169px;
+}
+
+.combine {
+  :global {
+    .fs-quarterPicker {
+      width: 169px;
+    }
+    // 与monthpicker图标位置不一致
+    .fs-quarterPicker .fs-month-picker > .box > .ant-select-arrow {
+      width: 14px;
+      height: 14px;
+      margin-top: -7px;
+    }
+  }
+}

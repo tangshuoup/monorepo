@@ -1,0 +1,47 @@
+html,
+body,
+#root,
+#root-master {
+  height: 100%;
+  font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei,
+    sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: rgba(224, 224, 224, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+// 状态码页异常样式
+.statusPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  > span {
+    font-size: 270px;
+  }
+
+  .tip {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 24px;
+    margin-top: -48px;
+  }
+}
