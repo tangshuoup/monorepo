@@ -1,6 +1,6 @@
 {
-  "name": "@montest/utils_test",
-  "version": "0.1.1",
+  "name": "@shuotest/utils",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "tanghsuo <shuo.tang@firesoon.com>",
   "homepage": "",
@@ -19,5 +19,5 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "c6d23ddfb81e62cfcdf271c827a1ca9b538b169d"
+  "gitHead": "6e89127c170bd11447f53be17dec1682770bd0c7"
 }
