@@ -1733,6 +1733,11 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@shuotest/components@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@shuotest/components/-/components-0.2.0.tgz#597ffaaa2f8f6f4f08190117e022a513f2573912"
+  integrity sha512-ELfv3aMgVCl66lR6h/TraLTa9i4x4Mpe3Ely6H8TS04Q64Pjw6VGgF8meOmCl3ED7rpMH1zuQHCSmKFYt2qulA==
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
@@ -11288,7 +11293,7 @@ react-tween-state@^0.1.5:
     raf "^3.1.0"
     tween-functions "^1.0.1"
 
-react@16.x, react@^16.12.0:
+react@16.x:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
@@ -13241,13 +13246,6 @@ umask@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/umask/-/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
-
-umi-plugin-mf-bootstrap@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/umi-plugin-mf-bootstrap/-/umi-plugin-mf-bootstrap-0.0.2.tgz#d91bfc4c2aaf6b96eae4c0f5a82f1b10403f739d"
-  integrity sha512-XXM88OgQN0iQRJ9pm0+pw5lveBFp2ZIk929o+YFY7URkoYr+4cM3G85XsS55/zitr9HhzMDUIIgtQZlmSo9S2g==
-  dependencies:
-    react "^16.12.0"
 
 umi-request@^1.2.14:
   version "1.4.0"

@@ -8,7 +8,6 @@
     "packages/*"
   ],
   "scripts": {
-    "boots": "rm -rf ./node_modules && lerna bootstrap",
     "start:app1": "cd packages/app1 && yarn start",
     "start:app2": "cd packages/app2 && yarn start"
   }

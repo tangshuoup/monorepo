@@ -4,7 +4,7 @@
  * @Author: tangshuo
  * @Date: 2021-11-30 14:55:46
  * @LastEditors: tangshuo
- * @LastEditTime: 2021-12-02 14:53:59
+ * @LastEditTime: 2021-12-02 17:22:05
  */
 import { prefix, version } from './src/utils/config';
 // const { ModuleFederationPlugin } = require("webpack").container;
@@ -27,6 +27,7 @@ export default {
   },
   alias: {
     '@ant-design/icons/lib/dist$': path.resolve(__dirname, './src/icons.ts'),
+    '@shuotest/components': path.resolve(__dirname, '../components/')
   },
   // webpack5: {},
   chainWebpack(config) {
